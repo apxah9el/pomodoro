@@ -12,10 +12,10 @@ body {
 
 #timerShort {
     font-family:'Roboto Mono',monospace;
-    color: skyblue;
+    color: #9f8ffa;
 }
 
 #timerLong {
     font-family:'Roboto Mono',monospace;
-    color: yellow;
+    color: #ffe65b;
 }
