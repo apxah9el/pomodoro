@@ -14,10 +14,17 @@ function startTimer() {
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){
+  if (s == 59) { m=m-1 }
+  if (m < 0) {
     return
-  } 
+  }
+  
+  if (m == 5 && s == 0) {
+    $('#5minleft').toast('show')
+  }
+  if (m == 1 && s == 0) {
+    $('#1minleft').toast('show')
+  }
   
   document.getElementById('timer').innerHTML =
     m + ":" + s;

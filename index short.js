@@ -14,10 +14,14 @@ function startTimerShort() {
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecondShort((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){
+  if (s == 59) { m=m-1 }
+  if (m < 0) {
     return
-  } 
+  }
+
+  if (m == 1 && s == 0) {
+    $('#1minleft').toast('show')
+  }
   
   document.getElementById('timerShort').innerHTML =
     m + ":" + s;
