@@ -50,6 +50,11 @@ stopButtonShort.click(function(){
     stopTimerShort()
 })
 
+resetButtonShort.click(function(){
+  document.getElementById('timerShort').innerHTML =
+  "5" + ":" + "00";
+})
+
 shortBreak.click(function(){
     document.getElementById('title-text').style.color="#e08e13"
     document.getElementById('background').style.backgroundColor="#dbb1f1"
