@@ -1,6 +1,7 @@
 var startButton = $("#start")
 var stopButton = $("#stop")
-var resetButton =$("#reset")
+var resetButton = $("#reset")
+var pomodoro = $("#study-time")
 
 const startBtn = document.querySelector("#start");
 
@@ -19,6 +20,9 @@ function startTimer() {
     return
   }
   
+  if (m == 15 && s == 0) {
+    $('#15minleft').toast('show')
+  }
   if (m == 5 && s == 0) {
     $('#5minleft').toast('show')
   }
@@ -55,4 +59,9 @@ stopButton.click(function(){
 resetButton.click(function(){
     document.getElementById('timer').innerHTML =
     "25" + ":" + "00";
+})
+
+pomodoro.click(function(){
+  document.getElementById('title-text').style.color="#13c2e0"
+  document.getElementById('background').style.backgroundColor="#f1b1c1"
 })

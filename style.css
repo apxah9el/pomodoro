@@ -7,15 +7,15 @@ body {
 
 #timer {
     font-family:'Roboto Mono',monospace;
-    color: rgb(253, 133, 237);
+    color: #13c2e0;
 }
 
 #timerShort {
     font-family:'Roboto Mono',monospace;
-    color: #9f8ffa;
+    color: #e08e13;
 }
 
 #timerLong {
     font-family:'Roboto Mono',monospace;
-    color: #ffe65b;
+    color: #13e095;
 }

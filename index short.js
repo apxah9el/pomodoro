@@ -1,6 +1,7 @@
 var startButtonShort = $("#startShort")
 var stopButtonShort = $("#stopShort")
 var resetButtonShort =$("#resetShort")
+var shortBreak = $("#short-break")
 
 const startBtnShort = document.querySelector("#startShort");
 
@@ -49,7 +50,7 @@ stopButtonShort.click(function(){
     stopTimerShort()
 })
 
-resetButtonShort.click(function(){
-    document.getElementById('timerShort').innerHTML =
-    "5" + ":" + "00";
+shortBreak.click(function(){
+    document.getElementById('title-text').style.color="#e08e13"
+    document.getElementById('background').style.backgroundColor="#dbb1f1"
 })

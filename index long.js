@@ -1,6 +1,7 @@
 var startButtonLong = $("#startLong")
 var stopButtonLong = $("#stopLong")
 var resetButtonLong =$("#resetLong")
+var longBreak = $("#long-break")
 
 const startBtnLong = document.querySelector("#startLong");
 
@@ -55,4 +56,9 @@ stopButtonLong.click(function(){
 resetButtonLong.click(function(){
     document.getElementById('timerLong').innerHTML =
     "15" + ":" + "00";
+})
+
+longBreak.click(function(){
+  document.getElementById('title-text').style.color="#13e095"
+  document.getElementById('background').style.backgroundColor="#e8e182"
 })
